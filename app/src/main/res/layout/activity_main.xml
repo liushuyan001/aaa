@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <EditText
+            android:background="@drawable/shape1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <com.bwie.liushuyan20181008.MyView
+            android:background="#e165c2"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"></android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_weight="1"></android.support.design.widget.TabLayout>
+</LinearLayout>
